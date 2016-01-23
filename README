@@ -1,0 +1,9 @@
+
+INSTALL:
+
+1. Download Linux Kernel Source Code, and go to "security" directory.
+2. Put the whole "lsm" directory under "security" directory.
+3. Replace the Kconfig file and Makefile File under "security" directory.
+4. Type "make menuconfig", and Un-check the modules using LSM (e.g. SMACK, SELinux, AppArmor). Make sure the added "lsm" module is selected.
+5. Compile and install the kernel.
+6. Reboot.

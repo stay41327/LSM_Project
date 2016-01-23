@@ -1,0 +1,6 @@
+config LSM_PROG
+bool "LSM PROGRAM Runtime Protection"
+depends on SECURITY && SECURITYFS
+default y
+help
+	Program Runtime Protection Based On LSM.
